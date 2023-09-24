@@ -1,8 +1,8 @@
 [gd_scene load_steps=15 format=3 uid="uid://ctwn54ipve855"]
 
 [ext_resource type="ArrayMesh" uid="uid://diwqdc2671via" path="res://Imphenzia/PixPal/Meshes/Bonzai.res" id="1_q4m1m"]
-[ext_resource type="Shader" uid="uid://dxoncufpd7fij" path="res://Imphenzia/PixPal/Materials/ImphenziaPixPal.tres" id="2_jst5u"]
 [ext_resource type="ArrayMesh" uid="uid://cx6v1y32q6f6s" path="res://Imphenzia/PixPal/Meshes/Cube.res" id="3_ao3s1"]
+[ext_resource type="Shader" uid="uid://dxoncufpd7fij" path="res://Imphenzia/PixPal/Resources/VS_ImphenziaPixPal.tres" id="4_w3lun"]
 [ext_resource type="ArrayMesh" uid="uid://bmbwoa86cmtly" path="res://Imphenzia/PixPal/Meshes/Laptop.res" id="4_wl83w"]
 [ext_resource type="ArrayMesh" uid="uid://bf25wdy4hkn0m" path="res://Imphenzia/PixPal/Meshes/Mirror.res" id="5_e46la"]
 [ext_resource type="ArrayMesh" uid="uid://fapjb6pykoei" path="res://Imphenzia/PixPal/Meshes/Phone.res" id="6_b8o7w"]
@@ -28,19 +28,19 @@ sdfgi_read_sky_light = false
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l3pyn"]
 render_priority = 0
-shader = ExtResource("2_jst5u")
+shader = ExtResource("4_w3lun")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_y6b3k"]
 render_priority = 0
-shader = ExtResource("2_jst5u")
+shader = ExtResource("4_w3lun")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0vyds"]
 render_priority = 0
-shader = ExtResource("2_jst5u")
+shader = ExtResource("4_w3lun")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xeluq"]
 render_priority = 0
-shader = ExtResource("2_jst5u")
+shader = ExtResource("4_w3lun")
 
 [node name="Node3D" type="Node3D"]
 
