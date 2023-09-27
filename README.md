@@ -6,6 +6,9 @@ This repo contains a Godot version of the Imphenzia PixPal demo scene. Everythin
 
 ## Changelog
 
+v1.2 - 2023-09-27
+* Added basic reflection on mirror (https://github.com/Flynsarmy/imphenzia-pixpal-godot-41-project/pull/1 - Thanks [Snikur](https://github.com/Snikur))
+
 v1.1 - 2023-09-24
 * Created a ShaderMaterial in the Materials folder, moved the VisualShader resource to a new Resources folder.
 * Clearcoat Roughness and Specular now match the Blender material
