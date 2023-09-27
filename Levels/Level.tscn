@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ctwn54ipve855"]
+[gd_scene load_steps=16 format=3 uid="uid://ctwn54ipve855"]
 
 [ext_resource type="ArrayMesh" uid="uid://diwqdc2671via" path="res://Imphenzia/PixPal/Meshes/Bonzai.res" id="1_q4m1m"]
 [ext_resource type="ArrayMesh" uid="uid://cx6v1y32q6f6s" path="res://Imphenzia/PixPal/Meshes/Cube.res" id="3_ao3s1"]
@@ -33,6 +33,9 @@ shader = ExtResource("4_w3lun")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_y6b3k"]
 render_priority = 0
 shader = ExtResource("4_w3lun")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_gljk0"]
+viewport_path = NodePath("Mirror/Sprite3D/SubViewport")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0vyds"]
 render_priority = 0
@@ -69,6 +72,16 @@ surface_material_override/0 = SubResource("ShaderMaterial_l3pyn")
 transform = Transform3D(0.891797, 0, -0.452435, 0, 1, 0, 0.452435, 0, 0.891798, -0.601, 0, 0.73)
 mesh = ExtResource("5_e46la")
 surface_material_override/0 = SubResource("ShaderMaterial_y6b3k")
+
+[node name="Sprite3D" type="Sprite3D" parent="Mirror"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.68221e-07, 0.340625, -0.0304869)
+texture = SubResource("ViewportTexture_gljk0")
+
+[node name="SubViewport" type="SubViewport" parent="Mirror/Sprite3D"]
+size = Vector2i(50, 62)
+
+[node name="Camera3D" type="Camera3D" parent="Mirror/Sprite3D/SubViewport"]
+transform = Transform3D(0.891797, 0, -0.452435, 0, 1, 0, 0.452435, 0, 0.891797, -0.601, 0.34815, 0.73)
 
 [node name="Phone" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.748, 0.019, 0)
